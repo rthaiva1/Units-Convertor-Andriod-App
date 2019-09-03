@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Fall 2018/Prof. Moore PST/Projects/program-0-rthaiva1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Fall 2018/Prof. Moore PST/Projects/program-2-fall18-rthaiva1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Fall 2018/Prof. Moore PST/Projects/program-3-fall18-rthaiva1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Fall 2018/Prof. Moore PST/Projects/program-4-fall18-rthaiva1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Fall 2018/Prof. Moore PST/Projects/program-5-fall18-akatsuki" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Fall 2018/Prof. Moore PST/Projects/program6-fall18-rthaiva1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Fall 2019/Game/Units-Convertor-Andriod-App" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Spring 2019/HPC/assignment-2-rthaiva1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Spring 2019/HPC/neural-network-in-cuda-rthaiva1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Spring 2019/HPC/parallel_k-nn-rthaiva1" vcs="Git" />
   </component>
 </project>

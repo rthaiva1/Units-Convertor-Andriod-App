@@ -4,57 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="10"
     tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="121dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
         android:text="Button"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="118dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="41dp"
-        android:layout_height="16dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="361dp" />
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="53dp">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
-
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314" />
 </androidx.constraintlayout.widget.ConstraintLayout>
