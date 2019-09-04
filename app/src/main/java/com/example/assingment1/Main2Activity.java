@@ -8,17 +8,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Main2Activity extends AppCompatActivity  implements AdapterView.OnItemSelectedListener{
 
     private EditText input;
-
-    private TextView selected;
     private TextView a;
     private TextView b;
+    private TextView c;
+    private TextView d;
     String text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +34,10 @@ public class Main2Activity extends AppCompatActivity  implements AdapterView.OnI
 
         Button bt_calculate = (Button) findViewById(R.id.button3);
 
-        selected = (TextView) findViewById(R.id.textView3);
-        a = (TextView) findViewById(R.id.textView2);
-        b = (TextView) findViewById(R.id.textView);
-
+        a = (TextView) findViewById(R.id.textView);
+        b = (TextView) findViewById(R.id.textView5);
+        c = (TextView) findViewById(R.id.textView8);
+        d = (TextView) findViewById(R.id.textView9);
 
         bt_calculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,14 +48,58 @@ public class Main2Activity extends AppCompatActivity  implements AdapterView.OnI
     }
     private void makeCalculations() {
         double result=0;
-            double n1 = Double.valueOf(input.getText().toString())/12;
-            result=n1;
-        a.setText("The result is: " + result);
+        if(text.compareTo("inch") == 0)
+        {
+            double n1 = Double.valueOf(input.getText().toString());
+            a.setText(String.format("%.2f", n1) + " inch");
+            double n2 = Double.valueOf(input.getText().toString()) * 2.54;
+            b.setText(String.format("%.2f", n2) + " cm");
+            double n3 = Double.valueOf(input.getText().toString()) / 12;
+            c.setText(String.format("%.2f", n3) + " feet");
+            double n4 = Double.valueOf(input.getText().toString()) / 63360;
+            d.setText(String.format("%.2f", n4) + " mile");
+        }
+
+        if(text.compareTo("cm") == 0)
+        {
+            double n1 = Double.valueOf(input.getText().toString()) / 2.54;
+            a.setText(String.format("%.2f", n1) + " inch");
+            double n2 = Double.valueOf(input.getText().toString());
+            b.setText(String.format("%.2f", n2) + " cm");
+            double n3 = Double.valueOf(input.getText().toString()) / 30.48;
+            c.setText(String.format("%.2f", n3) + " feet");
+            double n4 = Double.valueOf(input.getText().toString()) / 160934.4;
+            d.setText(String.format("%.2f", n4) + " mile");
+        }
+
+        if(text.compareTo("feet") == 0)
+        {
+            double n1 = Double.valueOf(input.getText().toString()) * 12;
+            a.setText(String.format("%.2f", n1) + " inch");
+            double n2 = Double.valueOf(input.getText().toString()) * 30.48;
+            b.setText(String.format("%.2f", n2) + " cm");
+            double n3 = Double.valueOf(input.getText().toString());
+            c.setText(String.format("%.2f", n3) + " feet");
+            double n4 = Double.valueOf(input.getText().toString()) / 5280;
+            d.setText(String.format("%.2f", n4) + " mile");
+        }
+
+        if(text.compareTo("mile") == 0)
+        {
+            double n1 = Double.valueOf(input.getText().toString()) * 63360;
+            a.setText(String.format("%.2f", n1) + " inch");
+            double n2 = Double.valueOf(input.getText().toString()) * 160934.4;
+            b.setText(String.format("%.2f", n2) + " cm");
+            double n3 = Double.valueOf(input.getText().toString()) * 5280;
+            c.setText(String.format("%.2f", n3) + " feet");
+            double n4 = Double.valueOf(input.getText().toString());
+            d.setText(String.format("%.2f", n4) + " mile");
+        }
+
     }
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         text = adapterView.getItemAtPosition(i).toString();
-        Toast.makeText(adapterView.getContext(), text, Toast.LENGTH_SHORT).show();
     }
 
     @Override

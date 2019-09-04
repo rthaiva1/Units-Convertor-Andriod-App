@@ -3,11 +3,8 @@
 
     <string-array name="length">
         <item>inch</item>
-        <item>mm</item>
         <item>cm</item>
-        <item>km</item>
         <item>feet</item>
-        <item>meters</item>
         <item>miles</item>
     </string-array>
 </resources>
