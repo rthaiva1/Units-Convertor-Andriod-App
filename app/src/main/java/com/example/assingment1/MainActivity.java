@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button firstbutton;
+    Button secondbutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +19,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent_1 = new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(intent_1);
+            }
+        });
+
+        secondbutton = findViewById(R.id.button2);
+        secondbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_1 = new Intent(MainActivity.this,Main3Activity.class);
                 startActivity(intent_1);
             }
         });

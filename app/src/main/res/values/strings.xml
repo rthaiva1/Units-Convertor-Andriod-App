@@ -7,4 +7,11 @@
         <item>feet</item>
         <item>miles</item>
     </string-array>
+
+    <string-array name="liquid">
+        <item>ml</item>
+        <item>litre</item>
+        <item>gal</item>
+        <item>fl oz</item>
+    </string-array>
 </resources>
