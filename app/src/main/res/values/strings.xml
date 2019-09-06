@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Assingment1</string>
+    <string name="app_name">Units Convertor</string>
 
     <string-array name="length">
         <item>inch</item>
